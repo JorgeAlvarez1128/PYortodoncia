@@ -1,0 +1,35 @@
+.spinner-container {
+  width: 100%;
+  min-height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  background-color: #ffffff;
+}
+
+.loading-spinner-img {
+  width: 160px !important;
+  height: 160px !important;
+  object-fit: contain !important;
+  display: block !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  animation: none !important;
+}
+
+.loading-spinner,
+.loading-spinner::before,
+.loading-spinner::after {
+  display: none !important;
+  content: none !important;
+}
+
+.loading {
+  color: #7a0c1d !important;
+  font-weight: 900 !important;
+  font-size: 1.2rem !important;
+  letter-spacing: 0.5px;
+}

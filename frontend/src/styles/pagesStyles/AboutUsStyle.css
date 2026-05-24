@@ -1,0 +1,415 @@
+.about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+.about-us .about-primary-container {
+  background: radial-gradient(#00abf5, #04b2d9, #00e0c8);
+  height: 40vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-us .about-primary-container .about-image {
+  height: 100%;
+  position: relative;
+  left: 10%;
+}
+.about-us .about-primary-container .about-tittle {
+  position: relative;
+  right: 15%;
+  color: #F9F9F9;
+  font-weight: bolder;
+}
+.about-us .about-second-container {
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-top: 60px;
+}
+.about-us .about-second-container .about-us_text {
+  width: 60vw;
+  text-align: justify;
+}
+.about-us .about-second-container .about-us_text .our-history {
+  color: #00abf5;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+.about-us .about-second-container .about-us_text .text-history {
+  line-height: 30px;
+}
+.about-us .about-second-container .doctor-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-us .about-second-container .doctor-info .doctor-name {
+  font-weight: 600;
+}
+.about-us .about-second-container .doctor-info .doctor-portrait {
+  width: 15vw;
+  border: 1px solid rgba(82, 82, 82, 0.158);
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 1px rgba(82, 82, 82, 0.712);
+  margin-bottom: 15px;
+}
+.about-us .about-us_mission {
+  margin-top: 50px;
+  background: #00abf5;
+  color: #F9F9F9;
+  height: 250px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-top: 40px;
+  box-shadow: 0px 5px 12px 2px #808080;
+}
+.about-us .about-us_mission div {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-us .about-us_mission div .mission-value {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.about-us .about-us_mission div .mission-text {
+  line-height: 25px;
+}
+.about-us .about-us_mission div p {
+  text-align: justify;
+  padding: 5px 20px;
+}
+.about-us .about-third-container {
+  margin-top: 60px;
+  margin-bottom: 50px;
+  width: 80vw;
+}
+.about-us .about-third-container .value-tittle {
+  color: #00abf5;
+  font-size: 1.8rem;
+}
+.about-us .about-third-container .value-description {
+  margin-top: 15px;
+  line-height: 30px;
+  text-align: justify;
+}
+.about-us .about-third-container .our-values {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.about-us .about-third-container .our-values .value-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150px;
+  flex-basis: 15%;
+  margin: 10px;
+  border-radius: 10px;
+  transition: all 1s ease;
+}
+.about-us .about-third-container .our-values .value-container:hover {
+  width: 170px;
+  flex-basis: 17%;
+  margin: 5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 20px;
+}
+.about-us .about-third-container .our-values .value-container:hover .value-image {
+  color: #00e0c8;
+  font-size: 75px;
+}
+.about-us .about-third-container .our-values .value-container:hover p {
+  font-size: 1.1rem;
+  color: #00e0c8;
+}
+.about-us .about-third-container .our-values .value-container p {
+  color: #00e0c8;
+  font-weight: 600;
+  transition: all 1s ease;
+}
+.about-us .about-third-container .our-values .value-container .value-image {
+  color: #00e0c8;
+  font-size: 70px;
+  transition: all 1s ease;
+}
+
+@media only screen and (max-width: 1023px) {
+  .about-us .about-primary-container {
+    height: 30vh;
+  }
+  .about-us .about-primary-container .about-image {
+    height: 90%;
+    position: relative;
+    top: 5%;
+  }
+  .about-us .about-second-container .about-us_text {
+    width: 55vw;
+  }
+  .about-us .about-second-container .doctor-info .doctor-portrait {
+    width: 20vw;
+  }
+  .about-us .about-us_mission {
+    padding-top: 20px;
+    height: 280px;
+  }
+  .about-us .about-third-container .our-values {
+    justify-content: space-evenly;
+  }
+  .about-us .about-third-container .our-values .value-container {
+    flex-basis: 30%;
+  }
+  .about-us .about-third-container .our-values .value-container:hover {
+    flex-basis: 32%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .about-us .about-primary-container {
+    height: 200px;
+    background-image: url(../../images/Dental-Office.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+  }
+  .about-us .about-primary-container .about-tittle {
+    position: inherit;
+  }
+  .about-us .about-primary-container .about-image {
+    display: none;
+  }
+  .about-us .about-second-container {
+    width: 80vw;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-us .about-second-container .about-us_text {
+    width: 100%;
+  }
+  .about-us .about-second-container .about-us_text .text-history {
+    line-height: 25px;
+  }
+  .about-us .about-second-container .doctor-info .doctor-portrait {
+    margin-top: 20px;
+    width: 35vw;
+  }
+  .about-us .about-us_mission {
+    height: 520px;
+    padding-top: 0;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .about-us .about-us_mission div {
+    width: 90%;
+  }
+  .about-us .about-third-container .value-description {
+    line-height: 25px;
+  }
+  .about-us .about-third-container .our-values .value-container {
+    flex-basis: 40%;
+  }
+  .about-us .about-third-container .our-values .value-container:hover {
+    flex-basis: 43%;
+  }
+}
+@media only screen and (max-width: 767px) and (max-width: 479px) {
+  .about-us .about-second-container .doctor-info .doctor-portrait {
+    margin-top: 20px;
+    width: 40vw;
+  }
+  .about-us .about-third-container .our-values .value-container {
+    flex-basis: 70%;
+  }
+  .about-us .about-third-container .our-values .value-container:hover {
+    flex-basis: 73%;
+  }
+}
+@media only screen and (max-width: 767px) and (max-width: 379px) {
+  .about-us .about-us_mission {
+    height: 700px;
+  }
+}/*# sourceMappingURL=AboutUsStyle.css.map */
+
+.arsenal-about {
+  width: 100%;
+  background-color: #f8f9fa;
+  padding-bottom: 40px;
+}
+
+.arsenal-about-hero {
+  width: 92%;
+  max-width: 1250px;
+  margin: 35px auto;
+  padding: 50px;
+  border-radius: 28px;
+  background: linear-gradient(135deg, #7a0c1d, #c8102e);
+  border-bottom: 6px solid #d4af37;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+}
+
+.arsenal-about-text {
+  width: 55%;
+  color: #ffffff;
+}
+
+.arsenal-about-text h1 {
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 18px 0;
+}
+
+.arsenal-about-text p {
+  color: #ffffff;
+  font-size: 1.12rem;
+  line-height: 1.7;
+}
+
+.arsenal-about-image {
+  width: 40%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 24px;
+  border: 5px solid #d4af37;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.3);
+}
+
+.arsenal-about-section {
+  width: 92%;
+  max-width: 1150px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 28px;
+}
+
+.arsenal-about-history,
+.arsenal-about-brand,
+.arsenal-about-mission > div,
+.arsenal-values-section {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 28px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.arsenal-about-history h3,
+.arsenal-about-mission h3,
+.arsenal-values-section h3 {
+  color: #7a0c1d;
+  font-weight: 900;
+  margin-bottom: 16px;
+  border-left: 6px solid #d4af37;
+  padding-left: 12px;
+}
+
+.arsenal-about-history p,
+.arsenal-about-mission p,
+.arsenal-values-section p {
+  color: #333333;
+  line-height: 1.7;
+}
+
+.arsenal-about-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.arsenal-about-brand img {
+  width: 170px;
+  margin-bottom: 18px;
+}
+
+.arsenal-about-brand p {
+  color: #7a0c1d;
+  font-weight: 900;
+  text-align: center;
+}
+
+.arsenal-about-mission {
+  width: 92%;
+  max-width: 1150px;
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+.arsenal-values-section {
+  width: 92%;
+  max-width: 1150px;
+  margin: 30px auto;
+}
+
+.arsenal-values-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.arsenal-value-card {
+  background: linear-gradient(135deg, #ffffff, #fff7f7);
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  border-top: 4px solid #c8102e;
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.08);
+}
+
+.arsenal-value-card svg {
+  color: #d4af37;
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.arsenal-value-card h4 {
+  color: #7a0c1d;
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+
+.arsenal-value-card p {
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 992px) {
+  .arsenal-about-hero,
+  .arsenal-about-section,
+  .arsenal-about-mission {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  .arsenal-about-hero {
+    padding: 32px;
+    text-align: center;
+  }
+
+  .arsenal-about-text,
+  .arsenal-about-image {
+    width: 100%;
+  }
+
+  .arsenal-about-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .arsenal-values-grid {
+    grid-template-columns: 1fr;
+  }
+}

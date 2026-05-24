@@ -1,0 +1,7 @@
+@import "../variables/colors";
+
+.turn-container{
+    background: $background;
+    min-height: 80vh;
+    display: flex;
+}

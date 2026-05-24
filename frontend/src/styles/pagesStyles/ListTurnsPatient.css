@@ -1,0 +1,118 @@
+.turns-list {
+  background: linear-gradient(135deg, #f8f9fa, #fff7f7);
+  width: 100vw;
+  min-height: 90vh;
+}
+.turns-list .patient-information {
+  padding: 10px 10px 10px 10vw;
+  background-color: #F9F9F9;
+}
+.turns-list .patient-information p {
+  margin-bottom: 3px;
+}
+.turns-list .patient-information span {
+  font-weight: bold;
+}
+.turns-list h4 {
+  text-align: center;
+  margin-top: 30px;
+  position: sticky;
+  left: 0px;
+  background-color: #F9F9F9;
+}
+.turns-list .turns-patient {
+  width: 70vw;
+  max-height: 90vh;
+  overflow: auto;
+  margin: 40px auto 40px;
+  background-color: #F9F9F9;
+}
+.turns-list .turns-patient .row-titles {
+  position: sticky;
+  top: -1px;
+  background-color: #f1f1f1;
+}
+.turns-list .turns-patient .center-input {
+  text-align: center;
+}
+.turns-list .turns-patient .fecha {
+  color: #f1f1f1;
+}
+
+@media screen and (max-width: 1024px) {
+  .turns-list .turns-patient {
+    width: 90vw;
+  }
+}/*# sourceMappingURL=ListTurnsPatient.css.map */
+
+/* Identidad Arsenal - turnos del paciente */
+
+.main,
+.main-list,
+.list-turns-patient,
+.turns-patient,
+.patient-turns,
+.container-turns {
+  background: linear-gradient(135deg, #f8f9fa, #fff7f7) !important;
+}
+
+.main section,
+.main-list section,
+.list-turns-patient section,
+.turns-patient section,
+.patient-turns section {
+  background: #ffffff !important;
+  border-radius: 22px !important;
+  padding: 28px !important;
+  margin: 35px auto !important;
+  max-width: 1200px !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08) !important;
+  border-top: 6px solid #c8102e !important;
+}
+
+.main h1,
+.main h2,
+.main h3,
+.main-list h1,
+.main-list h2,
+.main-list h3,
+.list-turns-patient h1,
+.turns-patient h1,
+.patient-turns h1 {
+  color: #7a0c1d !important;
+  font-weight: 900 !important;
+  border-left: 6px solid #d4af37 !important;
+  padding-left: 14px !important;
+  margin-bottom: 22px !important;
+}
+
+.main table,
+.main-list table,
+.list-turns-patient table,
+.turns-patient table,
+.patient-turns table {
+  background: #ffffff !important;
+  border-radius: 18px !important;
+  overflow: hidden !important;
+  border: 1px solid #e5e5e5 !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08) !important;
+}
+
+.main table th,
+.main-list table th,
+.list-turns-patient table th,
+.turns-patient table th,
+.patient-turns table th {
+  background-color: #7a0c1d !important;
+  color: #ffffff !important;
+  border-color: #7a0c1d !important;
+}
+
+.main table td,
+.main-list table td,
+.list-turns-patient table td,
+.turns-patient table td,
+.patient-turns table td {
+  background-color: #ffffff !important;
+  color: #222222 !important;
+}

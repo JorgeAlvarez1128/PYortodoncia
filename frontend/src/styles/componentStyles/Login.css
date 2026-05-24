@@ -1,0 +1,157 @@
+.div-login {
+  width: 100%;
+}
+
+.div-login .login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 82vh;
+  width: 100%;
+  padding: 40px 20px;
+  background:
+    linear-gradient(135deg, rgba(122, 12, 29, 0.92), rgba(200, 16, 46, 0.82)),
+    url("/src/images/arsenal/login-arsenal.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.div-login .login form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 380px;
+  max-width: 95%;
+  margin: 40px auto;
+  padding: 34px 30px;
+  border: 1px solid rgba(212, 175, 55, 0.55);
+  border-radius: 22px;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.35);
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(6px);
+}
+
+.div-login .login form img {
+  width: 145px;
+  max-height: 120px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.login-badge {
+  display: inline-block;
+  background-color: #d4af37;
+  color: #222222;
+  padding: 7px 13px;
+  border-radius: 999px;
+  font-weight: 900;
+  font-size: 0.82rem;
+  margin-bottom: 14px;
+}
+
+.div-login .login form h2 {
+  margin-bottom: 8px;
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: #7a0c1d;
+}
+
+.login-subtitle {
+  color: #555555;
+  text-align: center;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 22px;
+}
+
+.div-login .login form .form-group {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.div-login .login form .form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #222222;
+}
+
+.div-login .login form .form-group input[type="email"],
+.div-login .login form .form-group input[type="password"],
+.div-login .login form .form-group input[type="text"] {
+  width: 100%;
+  padding: 12px 13px;
+  border: 1px solid #cccccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.div-login .login form .form-group input[type="email"]:focus,
+.div-login .login form .form-group input[type="password"]:focus,
+.div-login .login form .form-group input[type="text"]:focus {
+  outline: none;
+  border-color: #c8102e;
+  box-shadow: 0 0 0 3px rgba(200, 16, 46, 0.18);
+}
+
+.div-login .login form button[type="submit"] {
+  width: 100%;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 999px;
+  font-size: 1rem;
+  font-weight: 900;
+  color: #ffffff;
+  background: linear-gradient(90deg, #7a0c1d, #c8102e);
+  cursor: pointer;
+  transition: 0.25s ease;
+  margin-top: 8px;
+}
+
+.div-login .login form button[type="submit"]:hover {
+  background: linear-gradient(90deg, #c8102e, #7a0c1d);
+  transform: translateY(-2px);
+}
+
+.div-login .login form a {
+  margin-top: 8px;
+  color: #7a0c1d;
+  font-weight: 800;
+  text-align: center;
+}
+
+.div-login .login form a:hover {
+  color: #c8102e;
+}
+
+.div-login .login form .show-password-button {
+  background-color: #7a0c1d;
+  padding: 3px;
+  border: none;
+}
+
+@media (max-width: 480px) {
+  .div-login .login {
+    padding: 25px 12px;
+  }
+
+  .div-login .login form {
+    width: 92%;
+    padding: 28px 22px;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 481px) {
+  .div-login .login form {
+    width: 80%;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .div-login .login form {
+    width: 50%;
+  }
+}
