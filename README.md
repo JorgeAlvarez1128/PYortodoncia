@@ -464,3 +464,9 @@ Se reconocen los créditos del repositorio base. La adaptación funcional, perso
 
 ---
 
+---
+
+## nota
+
+El repositorio cambio en relacion al de la entrega anterior. el repositorio con los documentos para la entrega numero 2 aun esta disponible y es: https://github.com/JorgeAlvarez1128/Diseno-de-sistemas-de-informacion
+---
