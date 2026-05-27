@@ -410,7 +410,7 @@ GET /reportes/operativo?fechaInicio=2026-05-01&fechaFin=2026-05-31
 
 ## Enlace al despliegue
 
-Actualmente el proyecto no cuenta con despliegue público. La ejecución se realiza en entorno local mediante:
+No aplica. La ejecución se realiza en entorno local mediante:
 
 ```text
 Frontend: http://localhost:5173
@@ -421,26 +421,8 @@ Backend: http://localhost:8080
 
 ## Capturas o evidencias del MVP
 
-Las evidencias del MVP pueden incluirse en la documentación del entregable o en una carpeta del repositorio, por ejemplo:
-
-```text
-docs/evidencias/
-```
-
-Capturas recomendadas:
-
-- Página de inicio.
-- Inicio de sesión.
-- Panel o menú de administrador.
-- Gestión de turnos.
-- Gestión de pacientes.
-- Gestión de odontólogos.
-- Inventario de insumos.
-- Registro de consumo de insumos.
-- Registro de evolución clínica.
-- Reporte operativo.
-- Evidencia del backend ejecutándose.
-- Evidencia del frontend ejecutándose.
+Se pueden encontrar en la siguiente carpeta compartida
+https://drive.google.com/drive/folders/1V7i9Jsk_m5KphZN2SPvhi_3_PVjqtYh3?usp=drive_link
 
 ---
 
