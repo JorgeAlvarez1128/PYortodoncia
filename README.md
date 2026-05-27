@@ -1,21 +1,14 @@
-## Odontotal
-
-**Enlace aplicación:** https://odontotal.online <br/>
-- **Usuario Administrador**<br/>
-correo: admin@gmail.com<br/>
-contraseña: 12345
-- **Usuario Odontólogo**<br/>
-correo: odontologo@gmail.com<br/>
-contraseña: 12345
-- **Usuario Paciente**<br/>
-correo: paciente@gmail.com<br/>
-contraseña: 12345
-<br/>
 # Ortodoncia The Arsenal
 
 Sistema web para la gestión clínica y operativa de una clínica de ortodoncia.
 
-El proyecto permite administrar pacientes, odontólogos, turnos, evolución clínica, inventario de insumos, consumo de materiales clínicos y reportes operativos. Fue adaptado y personalizado con una identidad visual alusiva a **Ortodoncia The Arsenal**, integrando una estética roja, dorada y blanca.
+**Repositorio:** https://github.com/JorgeAlvarez1128/PYortodoncia
+
+---
+
+## Integrante
+
+- Jorge Andres Alvarez
 
 ---
 
@@ -23,146 +16,15 @@ El proyecto permite administrar pacientes, odontólogos, turnos, evolución clí
 
 **Ortodoncia The Arsenal** es una aplicación web desarrollada con fines académicos para apoyar la gestión de una clínica de ortodoncia.
 
-El sistema permite centralizar procesos que normalmente pueden gestionarse de forma manual o dispersa, como la programación de citas, el registro de pacientes, el seguimiento clínico del tratamiento, el control de insumos y la generación de reportes administrativos.
+El sistema permite centralizar procesos asociados a la atención clínica y operativa, tales como la administración de pacientes, odontólogos, turnos, evolución clínica, inventario de insumos, consumo de materiales clínicos y generación de reportes operativos.
 
-La aplicación está compuesta por un **backend en Java con Spring Boot**, un **frontend en React con Vite** y una **base de datos MySQL**.
-
----
-
-## Objetivo del sistema
-
-Brindar una herramienta digital que permita mejorar la organización, trazabilidad y control operativo de una clínica de ortodoncia, facilitando la administración de pacientes, turnos, historia clínica, insumos y reportes.
+La solución está compuesta por un **backend desarrollado en Java con Spring Boot**, un **frontend desarrollado en React con Vite** y una **base de datos MySQL**. La aplicación fue personalizada visualmente con una identidad alusiva a Ortodoncia The Arsenal, empleando una paleta roja, dorada, blanca y oscura.
 
 ---
 
-## Funcionalidades principales
+## Objetivo del proyecto
 
-- Gestión de pacientes.
-- Gestión de odontólogos.
-- Gestión de turnos o citas.
-- Registro de evolución clínica ortodóntica.
-- Inventario de insumos clínicos.
-- Registro de consumo de insumos por turno.
-- Reportes operativos por rango de fechas.
-- Control de acceso por roles.
-- Interfaz personalizada con identidad visual de Ortodoncia The Arsenal.
-
----
-
-## Módulos del sistema
-
-### Pacientes
-
-Permite registrar, consultar, listar, actualizar y eliminar pacientes.
-
-Información manejada:
-
-- Nombre.
-- Apellido.
-- Documento.
-- Fecha de nacimiento.
-- Género.
-- Teléfono.
-- Dirección.
-- Correo electrónico.
-
----
-
-### Odontólogos
-
-Permite administrar los profesionales asociados a la clínica.
-
-Información manejada:
-
-- Nombre.
-- Apellido.
-- Documento.
-- Matrícula profesional.
-- Especialidad.
-- Teléfono.
-- Dirección.
-- Correo electrónico.
-
----
-
-### Turnos
-
-Permite programar citas entre pacientes y odontólogos.
-
-Información manejada:
-
-- Paciente.
-- Odontólogo.
-- Especialidad.
-- Fecha.
-- Hora.
-- Motivo de consulta.
-- Trabajo realizado.
-
----
-
-### Historia clínica / Evolución clínica
-
-Permite registrar información clínica asociada a una cita o turno.
-
-Información manejada:
-
-- Turno asociado.
-- Paciente.
-- Odontólogo.
-- Diagnóstico.
-- Plan de tratamiento.
-- Evolución.
-- Observaciones.
-- Fecha de registro.
-
----
-
-### Inventario de insumos
-
-Permite administrar los insumos utilizados en la atención ortodóntica.
-
-Información manejada:
-
-- Nombre del insumo.
-- Categoría.
-- Unidad de medida.
-- Stock actual.
-- Stock mínimo.
-- Estado activo/inactivo.
-- Alerta por bajo inventario.
-
----
-
-### Consumo de insumos
-
-Permite registrar los insumos utilizados durante una atención clínica.
-
-Información manejada:
-
-- Turno asociado.
-- Insumo utilizado.
-- Cantidad consumida.
-- Observación.
-- Fecha de registro.
-
----
-
-### Reportes operativos
-
-Permite generar reportes administrativos por rango de fechas.
-
-Indicadores incluidos:
-
-- Total de turnos.
-- Turnos atendidos.
-- Turnos pendientes.
-- Turnos cancelados.
-- Ausencias.
-- Consumo consolidado de insumos.
-- Productividad por odontólogo.
-
-Nota: los indicadores de cancelaciones y ausencias se conservan en la estructura del reporte, pero dependen de la implementación de un estado formal de turno.
+Desarrollar un sistema web que permita mejorar la organización, trazabilidad y control operativo de una clínica de ortodoncia, facilitando la gestión de citas, pacientes, profesionales, historia clínica, insumos y reportes administrativos.
 
 ---
 
@@ -170,28 +32,123 @@ Nota: los indicadores de cancelaciones y ausencias se conservan en la estructura
 
 ### Backend
 
-- Java 17.
-- Spring Boot.
-- Spring Security.
-- Maven.
-- JPA / Hibernate.
-- MySQL Connector.
-- JWT para autenticación.
+- Java 17
+- Spring Boot
+- Spring Web
+- Spring Security
+- JWT para autenticación
+- Spring Data JPA
+- Hibernate
+- Maven
+- MySQL Connector
 
 ### Frontend
 
-- React.
-- Vite.
-- JavaScript.
-- Bootstrap.
-- CSS personalizado.
-- SweetAlert2.
-- FontAwesome.
+- React
+- Vite
+- JavaScript
+- React Router
+- Bootstrap
+- CSS personalizado
+- SweetAlert2
+- FontAwesome
 
 ### Base de datos
 
-- MySQL Server 8.
-- MySQL Workbench o consola MySQL.
+- MySQL Server 8
+- MySQL Workbench o consola MySQL
+
+### Control de versiones
+
+- Git
+- GitHub
+
+---
+
+## Funcionalidades implementadas
+
+### Gestión de usuarios y autenticación
+
+- Inicio de sesión.
+- Control de acceso mediante roles.
+- Manejo de token JWT.
+- Roles principales: administrador, odontólogo y paciente.
+
+### Gestión de pacientes
+
+- Registro de pacientes.
+- Consulta de pacientes.
+- Actualización de información.
+- Eliminación o gestión de registros.
+
+### Gestión de odontólogos
+
+- Registro de odontólogos.
+- Consulta de profesionales.
+- Asociación de especialidad.
+- Administración de información básica del profesional.
+
+### Gestión de turnos
+
+- Creación de turnos o citas.
+- Asociación de paciente y odontólogo.
+- Selección de fecha y hora.
+- Consulta de turnos registrados.
+- Edición y gestión de turnos.
+
+### Historia clínica / evolución clínica
+
+- Registro de evolución clínica asociada a un turno.
+- Registro de diagnóstico.
+- Registro de plan de tratamiento.
+- Registro de evolución.
+- Registro de observaciones clínicas.
+- Consulta de evoluciones por paciente o por turno.
+
+### Inventario de insumos
+
+- Registro de insumos clínicos.
+- Consulta de inventario.
+- Actualización de insumos.
+- Control de stock actual.
+- Control de stock mínimo.
+- Alerta de bajo inventario.
+- Inactivación de insumos.
+
+### Consumo de insumos
+
+- Registro de insumos utilizados durante una atención.
+- Asociación del consumo a un turno.
+- Descuento automático del stock.
+- Consulta de consumos registrados.
+- Consulta de consumos por turno.
+
+### Reportes operativos
+
+- Generación de reportes por rango de fechas.
+- Total de turnos.
+- Turnos atendidos.
+- Turnos pendientes.
+- Consumo consolidado de insumos.
+- Productividad por odontólogo.
+
+---
+
+## Flujos alternativos y validaciones implementadas
+
+El backend incorpora validaciones y manejo de errores para evitar registros inconsistentes. Entre los principales flujos alternativos se encuentran:
+
+- Rechazo de insumos con nombre, categoría o unidad de medida vacíos.
+- Rechazo de stock actual o stock mínimo negativo.
+- Rechazo de insumos duplicados por nombre.
+- Rechazo de consumo de insumos con cantidad menor o igual a cero.
+- Rechazo de consumo cuando el turno no existe.
+- Rechazo de consumo cuando el insumo no existe o está inactivo.
+- Prevención de salidas de inventario que dejen el stock en valores negativos.
+- Rechazo de evolución clínica sin diagnóstico, plan de tratamiento o evolución.
+- Rechazo de evolución clínica cuando el turno asociado no existe.
+- Rechazo de evolución clínica duplicada para un mismo turno.
+- Rechazo de reportes con fecha final anterior a la fecha inicial.
 
 ---
 
@@ -210,16 +167,318 @@ Ortodoncia-The-Arsenal
 │   └── ...
 ├── schema-ortodoncia-the-arsenal.sql
 ├── README.md
+├── .gitignore
 └── ...
+```
 
+---
 
-Créditos
+## Requisitos de instalación
+
+Antes de ejecutar el proyecto se debe tener instalado:
+
+- Git
+- Node.js
+- npm
+- Java JDK 17
+- Maven
+- MySQL Server 8
+- Visual Studio Code o un editor equivalente
+
+Se puede verificar la instalación con los siguientes comandos:
+
+```powershell
+git --version
+node -v
+npm -v
+java -version
+javac -version
+mvn -v
+mysql --version
+```
+
+---
+
+## Configuración de la base de datos
+
+El backend está configurado para conectarse a una base de datos MySQL llamada:
+
+```text
+odontotal
+```
+
+Este nombre se conserva por compatibilidad con la estructura heredada del backend.
+
+Para crear la base de datos:
+
+```sql
+CREATE DATABASE odontotal;
+```
+
+Para verificar que fue creada:
+
+```sql
+SHOW DATABASES;
+```
+
+---
+
+## Ejecución del backend
+
+Ingresar a la carpeta del backend:
+
+```powershell
+cd C:\Users\alvar\proyectos\Ortodoncia-The-Arsenal\backend
+```
+
+Configurar variables de entorno en PowerShell:
+
+```powershell
+$env:DB_PASSWORD="password"
+$env:DDL_AUTO="update"
+```
+
+Donde:
+
+- `DB_PASSWORD` corresponde a la contraseña del usuario de MySQL.
+- `DDL_AUTO=update` permite que Hibernate actualice la estructura de la base de datos sin eliminar la información existente.
+
+Compilar el proyecto:
+
+```powershell
+mvn clean install -DskipTests
+```
+
+Ejecutar el backend:
+
+```powershell
+mvn -DskipTests spring-boot:run
+```
+
+El backend queda disponible en:
+
+```text
+http://localhost:8080
+```
+
+---
+
+## Ejecución del frontend
+
+Ingresar a la carpeta del frontend:
+
+```powershell
+cd C:\Users\alvar\proyectos\Ortodoncia-The-Arsenal\frontend
+```
+
+Instalar dependencias:
+
+```powershell
+npm install
+```
+
+Ejecutar el frontend:
+
+```powershell
+npm run dev
+```
+
+El frontend queda disponible en:
+
+```text
+http://localhost:5173
+```
+
+---
+
+## Usuario administrador de prueba
+
+El sistema incluye un usuario administrador para pruebas locales:
+
+```text
+Correo: admin@gmail.com
+Contraseña: 12345
+```
+
+Con este usuario se puede acceder a los módulos administrativos del sistema.
+
+---
+
+## Rutas principales del frontend
+
+```text
+/
+ /Login
+ /Registro
+ /AgregarTurno
+ /ListaDeTurnos
+ /AgregarOdontologo
+ /ListaDeOdontologos
+ /AgregarPaciente
+ /ListaDePacientes
+ /AgregarInsumo
+ /ListaDeInsumos
+ /ConsumoInsumos
+ /EvolucionClinica
+ /ReporteOperativo
+ /Servicios
+ /Conocenos
+```
+
+---
+
+## Endpoints principales del backend
+
+### Autenticación
+
+```http
+POST /login
+```
+
+### Pacientes
+
+```http
+GET /pacientes/listAll
+GET /pacientes/{id}
+POST /pacientes
+PUT /pacientes
+DELETE /pacientes/{id}
+```
+
+### Odontólogos
+
+```http
+GET /odontologos/listAll
+GET /odontologos/{id}
+POST /odontologos
+PUT /odontologos
+DELETE /odontologos/{id}
+```
+
+### Turnos
+
+```http
+GET /turnos
+GET /turnos/{id}
+POST /turnos
+PUT /turnos
+DELETE /turnos/{id}
+```
+
+### Insumos
+
+```http
+GET /insumos
+GET /insumos/{id}
+POST /insumos
+PUT /insumos
+PUT /insumos/{id}/entrada
+PUT /insumos/{id}/salida
+DELETE /insumos/{id}
+```
+
+### Consumo de insumos
+
+```http
+GET /consumos-insumos
+POST /consumos-insumos
+GET /consumos-insumos/turno/{id}
+```
+
+### Evolución clínica
+
+```http
+GET /evoluciones-clinicas
+POST /evoluciones-clinicas
+GET /evoluciones-clinicas/paciente/{id}
+GET /evoluciones-clinicas/turno/{id}
+```
+
+### Reportes operativos
+
+```http
+GET /reportes/operativo?fechaInicio=YYYY-MM-DD&fechaFin=YYYY-MM-DD
+```
+
+Ejemplo:
+
+```http
+GET /reportes/operativo?fechaInicio=2026-05-01&fechaFin=2026-05-31
+```
+
+---
+
+## Enlace al despliegue
+
+Actualmente el proyecto no cuenta con despliegue público. La ejecución se realiza en entorno local mediante:
+
+```text
+Frontend: http://localhost:5173
+Backend: http://localhost:8080
+```
+
+---
+
+## Capturas o evidencias del MVP
+
+Las evidencias del MVP pueden incluirse en la documentación del entregable o en una carpeta del repositorio, por ejemplo:
+
+```text
+docs/evidencias/
+```
+
+Capturas recomendadas:
+
+- Página de inicio.
+- Inicio de sesión.
+- Panel o menú de administrador.
+- Gestión de turnos.
+- Gestión de pacientes.
+- Gestión de odontólogos.
+- Inventario de insumos.
+- Registro de consumo de insumos.
+- Registro de evolución clínica.
+- Reporte operativo.
+- Evidencia del backend ejecutándose.
+- Evidencia del frontend ejecutándose.
+
+---
+
+## Buenas prácticas y patrones aplicados
+
+El backend sigue una arquitectura por capas:
+
+- Controladores REST.
+- Servicios de negocio.
+- Repositorios JPA.
+- Entidades de dominio.
+- DTOs para transferencia de datos.
+
+También se evidencian patrones y prácticas como:
+
+- **Controller:** exposición de endpoints REST.
+- **Service Layer:** concentración de reglas de negocio.
+- **Repository:** acceso a datos mediante Spring Data JPA.
+- **DTO:** transferencia de datos entre frontend y backend.
+- **Adapter:** conversión entre entidades y DTOs.
+- **State:** manejo de estados como activo/inactivo y stock mínimo.
+- **Strategy:** consultas y operaciones especializadas por módulo.
+- **Template Method:** secuencia común de validación, consulta, persistencia y respuesta en servicios.
+- **Observer conceptual:** actualización de datos derivados, como stock y reportes, a partir de eventos funcionales como el consumo de insumos.
+
+---
+
+## Créditos
 
 Este proyecto fue desarrollado como una adaptación académica basada en el repositorio original:
 
+```text
 Repositorio original: Clinica-Odontotal
 Autor original: LucianoGelvez
 URL: https://github.com/LucianoGelvez/Clinica-Odontotal
+```
 
-Se reconocen los créditos del repositorio base.
-La adaptación funcional, personalización visual y adecuación al caso de estudio Ortodoncia The Arsenal fueron realizadas con fines académicos.
+Se reconocen los créditos del repositorio base. La adaptación funcional, personalización visual y adecuación al caso de estudio **Ortodoncia The Arsenal** fueron realizadas con fines académicos.
+
+---
+
